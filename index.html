@@ -14,6 +14,7 @@
     <script src="Scripts/jquery.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/remodal.js"></script>
+    <script src="Scripts/modernizr.custom.js"></script>
     <meta name="viewport" content="width=device-width"/>
   </head>
 
@@ -65,7 +66,7 @@
                       <a href="#" data-remodal-target="uken">
                         <img src="uken/modal.png">
                       </a>
-                      <figcaption>
+                      <figcaption class="no-touch">
                         <span>
                           <h3>Sky Tactics</h3>
                           <p class="description">A fusion based battler for Android.</p>
@@ -86,7 +87,7 @@
                       <a href="#" data-remodal-target="pantry">
                         <img src="pantry/modal.png">
                       </a>
-                      <figcaption>
+                      <figcaption class ="no-touch">
                         <span>
                           <h3>Pantry</h3>
                           <p class="description">An ingredient first recipe app.</p>
@@ -124,11 +125,11 @@
         <p class="portfolio-body"> In many types of games, players are required to be able to make split second decisions under high-pressure environments. It's important to give players easily recognizable visual/audible cues that gives the necessary information for these decisions, in a reactionable time-frame. If these scenarios aren't designed for correctly, it can lead to a pretty frustrating time for the player. You don't want to be driving and suddenly your navigation tells you that you need to switch over two lanes in order to make a right turn in 50 metres <em>(looking at you, Apple Maps!)</em>.
       </div>
 
-      <img class="col-md-8 portfolio-img col-md-push-2 col-xs-12" src="uken/victory-old.gif">
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/victory-old.gif">
       <div class="col-md-8 col-md-push-2 col-xs-10 col-xs-push-1">
         <p class="portfolio-caption">The <b>previous iteration</b> of the victory screen.</p>
       </div>
-      <img class="col-md-8 portfolio-img col-md-push-2 col-xs-12" src="uken/victory.gif">
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/victory.gif">
       <div class="col-md-8 col-md-push-2">
         <p class="portfolio-caption">The <b>redesigned</b> victory screen.</p>
       </div>
@@ -151,17 +152,19 @@
           <li class="portfolio-list"><b>Prototyping:</b> How will this look like in-game? Let's try it!</li>
           <li class="portfolio-list"><b>Iterate:</b> Does this solve our problem? Can we improve on it further?</li>
         </ul>
-      <img class="col-md-12 portfolio-img col-xs-12" src="uken/notes.png">
-      <img class="col-md-12 portfolio- col-xs-12" src="uken/victory-flow.png">
-      <img class="col-md-12 portfolio-img col-xs-12" src="uken/flow-overview.png" style="padding-bottom:30px;">
       </div>
+
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/notes.png">
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/victory-flow.png">
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/flow-overview.png" style="padding-bottom:30px;">
+
       <div class="col-md-8 col-md-push-2">
         <p class="portfolio-em">Costant Collaboration</p>
         <p class="portfolio-body">Throughout the design process and during much of my stay, a big part of my own personal growth took place in the form of how I learnt to collaborate with a team. Due to the team structures at Uken, we were always working in small, agile teams, and I learnt that it was very beneficial to get non-designers familiar with the design principles within the team. I strove to get all members of the team to partake in the design process, as well as take an interest in it. I believe that it's very important to get different persepctives involved in the design process, because at the end of the day, we don't design inside of a bubble. </p>
       </div>
-      <img class="col-md-8 portfolio-img col-md-push-2 col-xs-12" src="uken/collaboration.jpg">
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/collaboration.jpg">
       <div class="col-md-8 col-md-push-2">
-        <p class="portfolio-caption">A "collaboration" meeting we had off-site. I'm the one in the black helmet.</p>
+        <p class="portfolio-caption">A collaboration "meeting" we had off-site. I'm the one in the black helmet.</p>
       </div>
 
 
@@ -178,10 +181,32 @@
       <p class="portfolio-subtitle">An ingredient first recipe app.</p>
 
       <div class="col-md-8 col-md-push-2">
-        <p class="portfolio-body">One of the biggest issues that we face on a daily basis is food wastage. Every time we do groceries, inevitably we throw away a full head of lettuce, or a whole block of cheese, or even 2 pounds of chicken because we overestimated how much we would need, then proceeded to leave it in the fridge instead of the freezer (for a couple of weeks, <i>eek!</i>). Pantry was created to help find a home for all those lost bits of food that you didn't know what to do with.
-        <p>
+        <p class="portfolio-body">One of the biggest issues that we face on a daily basis is food wastage. Every time we do groceries, inevitably we throw away a full head of lettuce, or a whole block of cheese, or even 2 pounds of chicken because we overestimated how much we would need, then proceeded to leave it in the fridge instead of the freezer (for a couple of weeks, <i>eek!</i>).
+        </p>
+        <p class="portfolio-body">We as a design team felt that there was a better way to handle the situation. We approached our solutions in the form of a hypothesis, and because of that our design was now a tool to validate our hypothesis instead of just another step in the process of creating an app. It's now something that allows our team to learn more about our audience.</p>
+      </div>
 
-        <p class="portfolio-body"></p>
+
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-em">Easier one handed use</p>
+        <p class="portfolio-body">A big frustration our team noticed from friends, family and within the team was that a lot of cooking apps and mobile sites were not very well designed for one handed use. Many of these apps at the time were not taking advantage of swipes or other gestural movements for navigation within the app. We wanted to change that and see if adding gestures would help our end user. We wanted to add gestures for bringing up the recipes page, as well as make it easier to switch between recipe instructions and recipe ingredients.</p>
+      </div>
+
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="pantry/navigation-old.png">
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-caption">Our first navigation iteration.</p>
+      </div>
+
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-body">Overall it was really beneficial to put this iteration into the wild. Here's a quick summary of what we found:</p>
+
+        <ul class="portfolio-ul">
+          <li class="portfolio-list">What are we trying to solve for?</li>
+          <li class="portfolio-list">How was this problem solved in other studios/teams?</li>
+          <li class="portfolio-list">What resources can we allocate for this overhaul?</li>
+          <li class="portfolio-list">How will this look like in-game? Let's try it!</li>
+          <li class="portfolio-list">Does this solve our problem? Can we improve on it further?</li>
+        </ul>
       </div>
 
     </div>

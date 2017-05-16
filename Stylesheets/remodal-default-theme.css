@@ -84,6 +84,7 @@ a.remodal-close:hover, a.remodal-close:focus {
   border-radius: 5px;
   color: #fafafa;
   background: #fff;
+  max-width: 900px;
 }
 
 .remodal.remodal-is-opening,
@@ -163,7 +164,7 @@ a.remodal-close:hover, a.remodal-close:focus {
 
 @media only screen and (min-width: 641px) {
   .remodal {
-    max-width: 900;
+    max-width: 900px;
   }
 }
 
