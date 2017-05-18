@@ -35,8 +35,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="myNavBar">
           <ul class="nav navbar-nav navbar-right">
+               <li><a class="name" href="#projects">Projects</a></li>
         			 <li><a class="name" href="#about">About</a></li>
-        			 <li><a class="name" href="#projects">Projects</a></li>
         			 <li><a class="name" href="#contact">Contact</a></li>
           </ul>
   		  </div>  <!-- /.navbar-collapse -->
@@ -49,7 +49,7 @@
                   <div class="row justify-content-center align-items-center">
                       <div class="col-md-12">
                         <div class="col-md-6 col-xs-12 col-md-push-3">
-                          <h1 class="intro-head">Design, for me, is about addressing the needs and problems of real people. In products, it exists to
+                          <h1 class="intro-head">Design, for me, is about addressing the needs and problems of real people. It is, at its core, human. In products, it exists to
                             <span>1</span> convey information, <span>2</span> engage attention, and <span>3</span> reveal interaction.
                             <em class="intro-sub">I aim to design elegantly using iterative processes, thoughtful questions, and an eye for the little things.</em>
                           </h1>
@@ -98,7 +98,24 @@
                           </ul>
                           <a class="btn" href="#" data-remodal-target="pantry">View</a>
                         </span>
-                        <!-- <a class="btn" href="#" data-remodal-target="uken">More</a> -->
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="#" data-remodal-target="hustle">
+                        <img src="hustle/modal.png">
+                      </a>
+                      <figcaption class ="no-touch">
+                        <span>
+                          <h3>Hustle</h3>
+                          <p class="description">Turn talk into action: a redesign.</p>
+                          <ul class="tags">
+                            <li>UX Design</li>
+                            <li>UI Design</li>
+                          </ul>
+                          <a class="btn" href="#" data-remodal-target="hustle">View</a>
+                        </span>
                       </figcaption>
                     </figure>
                   </li>
@@ -126,11 +143,11 @@
       </div>
 
       <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/victory-old.gif">
-      <div class="col-md-8 col-md-push-2 col-xs-10 col-xs-push-1">
+      <div class="col-md-8 col-md-push-2 col-xs-12">
         <p class="portfolio-caption">The <b>previous iteration</b> of the victory screen.</p>
       </div>
       <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/victory.gif">
-      <div class="col-md-8 col-md-push-2">
+      <div class="col-md-8 col-md-push-2 col-xs-12">
         <p class="portfolio-caption">The <b>redesigned</b> victory screen.</p>
       </div>
 
@@ -163,7 +180,7 @@
         <p class="portfolio-body">Throughout the design process and during much of my stay, a big part of my own personal growth took place in the form of how I learnt to collaborate with a team. Due to the team structures at Uken, we were always working in small, agile teams, and I learnt that it was very beneficial to get non-designers familiar with the design principles within the team. I strove to get all members of the team to partake in the design process, as well as take an interest in it. I believe that it's very important to get different persepctives involved in the design process, because at the end of the day, we don't design inside of a bubble. </p>
       </div>
       <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="uken/collaboration.jpg">
-      <div class="col-md-8 col-md-push-2">
+      <div class="col-md-8 col-md-push-2 col-xs-12">
         <p class="portfolio-caption">A collaboration "meeting" we had off-site. I'm the one in the black helmet.</p>
       </div>
 
@@ -171,44 +188,83 @@
     </div>
   </div>
 
+<!-- Pantry -->
   <div class="remodal" data-remodal-id="pantry">
     <div class="header-pantry">
-      <img class="header" src="pantry/Header.png" style="visibility=hidden">
+      <img class="header" src="pantry/Header.png" style="visibility:hidden">
     </div>
 
     <div class="remodal-close container-fluid">
       <p class=portfolio-title>Pantry</p>
-      <p class="portfolio-subtitle">An ingredient first recipe app.</p>
+      <p class="portfolio-subtitle">An ingredient first recipe app</p>
 
       <div class="col-md-8 col-md-push-2">
         <p class="portfolio-body">One of the biggest issues that we face on a daily basis is food wastage. Every time we do groceries, inevitably we throw away a full head of lettuce, or a whole block of cheese, or even 2 pounds of chicken because we overestimated how much we would need, then proceeded to leave it in the fridge instead of the freezer (for a couple of weeks, <i>eek!</i>).
-        </p>
-        <p class="portfolio-body">We as a design team felt that there was a better way to handle the situation. We approached our solutions in the form of a hypothesis, and because of that our design was now a tool to validate our hypothesis instead of just another step in the process of creating an app. It's now something that allows our team to learn more about our audience.</p>
+        <br>
+        <br>
+        Pantry is an ingredient focused recipe experience that makes it simpler than ever to quickly cook with the things around you. It takes seconds to find a recipe that you can make with the ingredients you have on hand.</p>
       </div>
+
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="pantry/Pantry-Mockup.png">
 
 
       <div class="col-md-8 col-md-push-2">
-        <p class="portfolio-em">Easier one handed use</p>
-        <p class="portfolio-body">A big frustration our team noticed from friends, family and within the team was that a lot of cooking apps and mobile sites were not very well designed for one handed use. Many of these apps at the time were not taking advantage of swipes or other gestural movements for navigation within the app. We wanted to change that and see if adding gestures would help our end user. We wanted to add gestures for bringing up the recipes page, as well as make it easier to switch between recipe instructions and recipe ingredients.</p>
+        <p class="portfolio-em">Navigation</p>
+        <p class="portfolio-body">Our first in-app navigation consisted of accessing different app sections through a top oriented navigation bar. However, we found out through some guerilla testing that when people are actively cooking, they seldom have more than one hand available at at time. It was difficult to flow through the app while cooking if many of the settings and navigation buttons were out of initial reach.</p>
       </div>
 
       <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="pantry/navigation-old.png">
-      <div class="col-md-8 col-md-push-2">
-        <p class="portfolio-caption">Our first navigation iteration.</p>
+      <div class="col-md-8 col-md-push-2 col-xs-12">
+        <p class="portfolio-caption">Our first navigation iteration, with top heavy buttons. Yes, this app was formerly named Whisk.</p>
       </div>
 
       <div class="col-md-8 col-md-push-2">
-        <p class="portfolio-body">Overall it was really beneficial to put this iteration into the wild. Here's a quick summary of what we found:</p>
-
-        <ul class="portfolio-ul">
-          <li class="portfolio-list">What are we trying to solve for?</li>
-          <li class="portfolio-list">How was this problem solved in other studios/teams?</li>
-          <li class="portfolio-list">What resources can we allocate for this overhaul?</li>
-          <li class="portfolio-list">How will this look like in-game? Let's try it!</li>
-          <li class="portfolio-list">Does this solve our problem? Can we improve on it further?</li>
-        </ul>
+        <p class="portfolio-body">The solution was to replace the existing navigation with a bottom navigation bar. An iOS standard for years, it places important app views near the bottom of the screen, easier to reach. Easier one handed use allows for an easier time using the app while cook, and was one of the ways Pantry differentiated itself from other products in the same sphere.
+        </p>
       </div>
 
+      <img class="col-md-8 col-md-push-2 portfolio-img col-xs-12" src="pantry/pantry-Navigation.gif">
+      <img class="col-md-8 col-md-push-2 portfolio-img col-xs-12 align-center" src="pantry/navigation-Bars.png" >
+
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-em">Reduced complexity</p>
+        <p class="portfolio-body">The initial recipes view featured an overview page where a user would use a swipe action to access the recipe details view. We later found out from a friend that was using the app for us that it was simply too annoying a gesture to go through all the time. When browsing multiple recipes, looking for ones that didn't involve the use of an oven, it was simply an unnecessary additional step in the user flow. Instead, I realized that we needed to remove the behaviour, and have it directly link to the recipe details.</p>
+      </div>
+
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="pantry/pantry-recipes-old.png">
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-caption">The old recipes page involved a swipe up gesture to access the instructions/ingredients screens.</p>
+      </div>
+
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-body"></p>
+      </div>
+
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="pantry/Pantry-RecipeView.gif">
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-caption">Our reiteration removes it and goes straight to the recipe details.</p>
+      </div>
+
+      <div class="col-md-8 col-md-push-2">
+        <p class="portfolio-em">Recipies, Ordered!</p>
+        <p class="portfolio-body">Recipe instructions and ingredients in one area makes it pretty convienient to read at once, right? But what if I need to constantly scroll between finding what kinds of pepper and onion I need, and how to prepare them? To solve this problem, the seperated instructions and ingredients views comes in. You can switch between the two views at any time, which means you can have your steak and prepare it too. </p>
+      </div>
+
+      <img class="col-md-10 col-md-push-1 portfolio-img col-xs-12" src="pantry/Pantry-RecipeSwitches.gif">
+
+    </div>
+
+  </div>
+
+<!-- Hustle -->
+  <div class="remodal" data-remodal-id="hustle">
+    <div class="header-hustle">
+      <img class="header" src="hustle/header.png" style="visibility:hidden">
+    </div>
+
+    <div class="remodal-close container-fluid">
+      <p class="portfolio-title">Hustle</p>
+      <p class="portfolio-subtitle">Turn talk into action: an app redesign</p>
     </div>
 
   </div>
