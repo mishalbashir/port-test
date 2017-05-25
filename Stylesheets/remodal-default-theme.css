@@ -85,6 +85,7 @@ a.remodal-close:hover, a.remodal-close:focus {
   color: #fafafa;
   background: #fff;
   max-width: 900px;
+  min-width: 500px;
 }
 
 .remodal.remodal-is-opening,
