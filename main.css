@@ -1,0 +1,357 @@
+/*General --------------------------------------------------------------*/
+#page-wrap {
+     max-width: 1000px;
+     margin: 0 auto;
+}
+
+#page-wrap-projects{
+     max-width: 800px;
+     margin: 0 auto;
+}
+
+@media only screen and (min-width: 48em) {
+
+  .stay-fixed {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 60px;
+  }
+  .stay-right{
+    text-align: right;
+  }
+}
+
+/*Fonts --------------------------------------------------------------*/
+
+
+@font-face {
+      font-family: Chap-Light;
+      src: url(Chap-Light.woff);
+      font-weight: normal;
+      font-style: normal;
+  }
+@font-face {
+      font-family: SilkSerif-ExtraLight;
+      src: url(SilkSerif-ExtraLight.woff);
+      font-weight: normal;
+      font-style: normal;
+  }
+
+span {
+  font-family: 'SilkSerif-ExtraLight', sans-serif;
+}
+
+sup {
+  font-family: 'Roboto', sans-serif;
+}
+
+em{
+  font-weight: 600;
+}
+
+.chap {
+  font-family: 'Chap-Light', sans-serif;
+}
+
+.plex{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    line-height:30px;
+}
+
+.header {
+    font-family: 'Chap-light', sans-serif;
+/*    font-weight: 300;*/
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.header2 {
+    font-family: 'Chap-Light', sans-serif;
+    font-size: 20px;
+    line-height: 328x;
+}
+
+.header2sup{
+  font-size: 25px;
+  line-height: 4.1vw;
+  font-weight: 400;
+}
+
+.headerabout{
+  font-family: 'Chap-Light'; sans-serif;
+  font-size: 50px;
+  line-height: 66px;
+  font-weight: 100;
+}
+.primary {
+          font-family: 'Chap-Light'; sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          opacity: .7;
+          padding-bottom: 5px;
+}
+
+.tertiary {
+          font-family: 'Chap-Light'; sans-serif;
+          font-size: 15px;
+          line-height:30px;
+          color: #333;
+}
+
+
+.secondary {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    line-height:30px;
+    color: #999;
+}
+
+.caption {
+    font-style: italic;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+    font-size: 24px!important;
+    z-index: 100;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.fixed:hover {
+    color: #9EEBCF!important;
+}
+
+.fa {
+    color: #999;
+}
+
+.underline {
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+}
+
+a.underline:hover {
+  color: #949494!important;
+}
+
+a {
+	text-decoration:none !important;
+	color: inherit !important;
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+a:hover {
+	color: #949494;
+}
+
+a.highlight {
+	position:relative;
+	text-decoration: none;
+    color: #333;
+}
+
+.highlight:before{
+	width:100%;
+	height:10px;
+	position:absolute;
+	left:0px;
+	bottom:-4px;
+	content:"";
+	display:block;
+	background-color: #9EEBCF;
+	z-index:-1;
+	opacity: 1;
+	-webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+a.highlight:hover{
+	color: inherit !important;
+}
+
+a.highlight:hover:before {
+	color: #90949C;
+	background-color: #9EEBCF;
+    height:25px;
+}
+
+a:visited {
+    color: inherit!important;
+}
+
+.details {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  padding-bottom: 5px;
+}
+/*Borders --------------------------------------------------------------*/
+
+.link {
+        border-bottom: solid 1px rgba(0,0,0,.5);
+    }
+
+/*Padding --------------------------------------------------------------*/
+.pad-xs {
+	margin-bottom: 15px;
+}
+
+
+.pad-s {
+	margin-bottom: 40px;
+}
+
+.pad-m {
+	margin-bottom: 120px;
+	margin-top: auto;
+}
+
+.pad-l {
+	margin-bottom: 200px;
+}
+
+.pad-xl {
+	margin-bottom: 180px;
+}
+
+.fa {
+	margin-right: 15px;
+}
+
+/*Home Projects --------------------------------------------------------------*/
+
+.project-box {
+    padding: 20px;
+}
+
+.box-shadow {
+    box-shadow: 0 10px 22px rgba(0,0,0,.08);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding: 0px!important;
+}
+
+.box-shadow:hover {
+    box-shadow: 0px 16px 22px 2px rgba(51,51,51,0.2);
+}
+
+.hover-up {
+    top: 0px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-up:hover {
+    top: -20px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.outer-box {
+    padding: 15px;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  background: rgba(255,255,255,0.95);
+    transition: opacity 0.5s;
+}
+
+.box-shadow:hover .overlay {
+    opacity: 1;
+}
+
+.vh-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 24px!important;
+}
+
+/*Projects --------------------------------------------------------------*/
+.hero-tilr {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+    background-image: url(img/tilr/hero-tilr.png);
+}
+
+.hero-onboarding {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+    background-image: url(img/onboarding/hero-onboarding.png);
+}
+
+@media only screen and (max-width: 750px) {
+    .hero-sling{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .hero-sling{
+        height: 200px;
+    }
+}
+
+.video-grid-outer {
+	background-color: #EEFBFF;
+	padding: 120px!important;
+}
+
+.video-grid-item-3 {
+	width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .video-grid-outer {
+        padding: 30px;
+    }
+}
+
+.video-grid-outer video {
+	-webkit-box-shadow: 0px 30px 40px -15px rgba(161,165,172,0.3);
+	-moz-box-shadow: 0px 30px 40px -15px rgba(161,165,172,0.3);
+	box-shadow: 0px 25px 40px -15px rgba(186 ,196 ,233 ,1);
+}
+
+
+
+/*Footer --------------------------------------------------------------*/
+.footer {
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-bg {
+    background-color: #f7f7f7;
+    height: 200px;
+}
